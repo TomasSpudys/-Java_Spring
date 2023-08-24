@@ -1,4 +1,4 @@
-package entity;
+package com.example.javaspring.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
