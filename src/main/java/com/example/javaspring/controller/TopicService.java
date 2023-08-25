@@ -20,10 +20,22 @@ private TopicRepository topicRepository;
     }
 
 
+    public Topic getTopic(Long id) {
+        return  topicRepository.findById(id).get();
+    }
 
 
+        public List<Topic> findTopicsByTitle(String topicTitle) {
+            return topicRepository.findByTitle(topicTitle);
+        }
 
-}
+    public Topic addNewTopic(Topic newTopic) {
+        return topicRepository.save(newTopic);
+    }
+
+    }
+
+
 
 
 
